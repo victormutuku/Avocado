@@ -4,50 +4,342 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ffa341cf64.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans">
+    <style></style>
     <title>Avocado - Dashboard</title>
 </head>
-<body class="bg-[#f8f8f8]">
-    <div class="bg-white font-['Plus_Jakarta_Sans'] w-[250px] h-screen">
+<body class="bg-[#f8f8f8] flex">
+    <div class="bg-white font-['Plus_Jakarta_Sans'] w-[270px] h-screen fixed">
         <div class="flex justify-center">
             <p class="font-bold text-[#5cad46] text-3xl py-10">avocado</p>
         </div>
         <div class="pl-[60px]">
             <p class="a">Main Menu</p>
             <div class="pl-5">
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/dashboard_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center hover:text-[#5cad46]">
+                    <div class="bg-[url('assets/icons/black/dashboard_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2 hover:bg-[url('assets/icons/dashboard_icon_green.svg')]"></div>
                     Dashboard
                 </div>
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/members_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/members_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
                     Members
                 </div>
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/content_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/content_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
                     Content
                 </div>
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/moderators_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/moderators_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
                     Moderators
                 </div>
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/partners_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/partners_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
                     Partners
                 </div>
             </div>
             <p class="">Settings</p>
             <div class="pl-5">
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/account_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/account_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
                     Account
                 </div>
-                <div class="my-4 flex items-center">
-                    <div class="bg-[url('assets/icons/settings_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/settings_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
                     Preferences
+                </div>
+            </div>
+            <div class="pt-5 pl-5">
+                <div class="my-6 flex items-center">
+                    <div class="bg-[url('assets/icons/black/log_out_icon.svg')] bg-contain bg-no-repeat w-[20px] h-[20px] mr-2"></div>
+                    Log out
                 </div>
             </div>
         </div>
     </div>
+    <section class="pl-[270px]">
+        <div class="flex justify-end mt-5 text-sm font-['Plus_Jakarta_Sans']">
+            <div class="w-[180px] h-[40px] bg-white rounded-md border-[1px] flex justify-between items-center mr-20 px-5">
+                <div class="bg-[url('assets/icons/green/partners_icon_green.svg')] w-[18px] h-[18px] bg-contain bg-no-repeat"></div>
+                Partner
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="w-[303px] h-[40px] bg-white rounded-md border-[1px] flex justify-between items-center px-5">
+                <div class="bg-[url('assets/icons/green/calendar_icon_green.svg')] w-[18px] h-[18px] bg-contain bg-no-repeat"></div>
+                Nov 01,2022 - Nov 20,2022
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="mt-[40px] flex">
+            <div class="mr-20">
+                <section class="flex ml-10 font-['Plus_Jakarta_Sans']">
+                    <div>
+                        <p class="font-semibold mb-5">Members</p>
+                        <div class="w-[400px] h-[65px] bg-[#5cad46] flex items-center pl-4 rounded-md">
+                            <p class="text-white">Total members: <span class="text-[#fac731] ml-2">230</span></p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="mb-5 flex">
+                                <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4 mr-4">
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-sm">
+                                            <p class="text-[#fac731] leading-none">Gold</p>
+                                            <p>Members</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#5cad46] ">31</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4">
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-sm">
+                                            <p class="text-[#7e7e7e] leading-none">Silver</p>
+                                            <p>Members</p>
+                                        </div>
+                                        <div class="text-[#5cad46]">
+                                            <p>54</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4 mr-4">
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-sm">
+                                            <p class="text-[#fa8f31] leading-none">Bronze</p>
+                                            <p>Members</p>
+                                        </div>
+                                        <div class="text-[#5cad46]">
+                                            <p>14</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4">
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-sm">
+                                            <p class="text-[#bababa] leading-none">Not-assigned</p>
+                                            <p>Members</p>
+                                        </div>
+                                        <div class="text-[#5cad46]">
+                                            <p>131</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-4 mt-[44px]">
+                        <div class="border-[1.5px] border-[#5cad46] w-[192px] h-[65px] rounded-md flex flex-col justify-center mb-5 px-4">
+                            <div class="flex justify-between items-center text-sm">
+                                <div>
+                                    <p class="font-semibold leading-none">Active</p>
+                                    <p >Users</p>
+                                </div>
+                                <div class="text-[#5cad46] text-right">
+                                    <p class="leading-none">221</p>
+                                    <p class="text-[#fac731]">97%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-[1.5px] border-[#5cad46] w-[192px] h-[65px] rounded-md flex flex-col justify-center mb-5 px-4">
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-sm">
+                                    <p class="font-semibold leading-none">Billable</p>
+                                    <p>Membership</p>
+                                </div>
+                                <div class="text-[#5cad46]">
+                                    <p>221</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-[1.5px] border-[#5cad46] w-[192px] h-[65px] rounded-md flex flex-col justify-center mb-5 px-4">
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-sm">
+                                    <p class="font-semibold leading-none">Avg. <span class="font-normal">member</span></p>
+                                    <p>per active users</p>
+                                </div>
+                                <div class="text-[#5cad46]">
+                                    <p>221</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex mt-10 ml-10 font-['Plus_Jakarta_Sans']">
+                    <div>
+                        <p class="font-semibold mb-5">Content</p>
+                        <div class="w-[608px] h-[65px] bg-[#5cad46] flex items-center pl-4 rounded-md">
+                            <p class="text-white">Total content submitted: <span class="text-[#fac731] ml-2">901</span></p>
+                        </div>
+                        <div class="flex">
+                            <div class="mt-4 mr-4">
+                                <div class="mb-5 flex">
+                                    <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4 mr-4">
+                                        <div class="flex justify-between items-center">
+                                            <div class="text-sm">
+                                                <p class="font-semibold leading-none">Content</p>
+                                                <p>per active user</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-[#5cad46] ">09</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4">
+                                        <div class="flex justify-between items-center">
+                                            <div class="text-sm">
+                                                <p class="font-semibold leading-none">Avg. rating</p>
+                                                <p>per content</p>
+                                            </div>
+                                            <div class="text-[#5cad46]">
+                                                <p>6.8</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4 mr-4">
+                                        <div class="flex justify-between items-center">
+                                            <div class="text-sm">
+                                                <p class="font-semibold leading-none">Pending</p>
+                                                <p>for approval</p>
+                                            </div>
+                                            <div class="text-[#5cad46]">
+                                                <p>8</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[192px] h-[65px] flex flex-col justify-center bg-white rounded-md px-4">
+                                        <div class="flex justify-between items-center">
+                                            <div class="text-sm">
+                                                <p class="font-semibold leading-none">Rejection</p>
+                                                <p>rate</p>
+                                            </div>
+                                            <div class="text-[#5cad46]">
+                                                <p>38%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="mb-5 flex">
+                                    <div class="relative w-[192px] h-[150px] bg-[url('assets/images/dashboard-content-img-1.webp')] bg-cover bg-no-repeat rounded-md overflow-hidden">
+                                    <!-- <div class="absolute w-full h-full bg-white/20"></div> -->
+                                    <div class="w-full h-full bg-gradient-to-t from-black via-white/20 to-white/20 flex justify-between items-end px-4 pb-4">
+                                        <div class="flex flex-col justify-start text-white text-sm leading-none">
+                                            <p>Check out</p>
+                                            <p class="font-semibold">the content bank</p>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-chevron-right text-[#fac731] fa-xl "></i>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="w-[303px] h-fit bg-white rounded-md font-['Plus_Jakarta_Sans'] px-8 pt-8">
+                <p class="font-bold leading-none text-[#5cad46] mb-8">Reports</p>
+                <div class="bg-[url('assets/images/signups-chart.png')] bg-contain bg-no-repeat w-[250px] h-[250px]"></div>
+                <div class="bg-[url('assets/images/contents-chart.png')] bg-contain bg-no-repeat w-[250px] h-[215px] mt-[70px]"></div>
+            </div>
+        </div>
+        <section class="flex my-[60px] ml-10 font-['Plus_Jakarta_Sans']">
+            <div class="mr-20">
+                <div class="flex">
+                    <div>
+                        <p class="font-semibold mb-5">Partners</p>
+                        <div class="w-[400px] h-[65px] bg-[#5cad46] flex items-center pl-4 rounded-md">
+                            <p class="text-white">Total partners: <span class="text-[#fac731] ml-2">11</span></p>
+                        </div>
+                    </div>
+                    <div class="ml-4 mt-[44px]">
+                        <div class="border-[1.5px] border-[#5cad46] w-[192px] h-[65px] rounded-md flex flex-col justify-center mb-5 px-4">
+                            <div class="flex justify-between items-center text-sm">
+                                <div>
+                                    <p class="font-semibold leading-none">Avg. <span class="font-normal">member</span></p>
+                                    <p >per partner</p>
+                                </div>
+                                <div class="text-[#5cad46] text-right">
+                                    <p class="leading-none">10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[608px] h-fit bg-white rounded-md py-5 px-8 flex flex-col justify-center items-center">
+                    <div class="flex text-sm font-['Plus_Jakarta_Sans'] mb-4">
+                        <div class="flex justify-between w-[246px] mr-9">
+                            <p class="font-semi-bold">Leads</p>
+                            <p class="underline">Details</p>
+                        </div>
+                        <div class="flex justify-between w-[246px]">
+                            <p class="font-semi-bold">Revenue Generation</p>
+                            <p class="underline">Details</p>
+                        </div>
+                    </div>
+                    <div class="bg-[url('assets/images/partners-chart.png')] w-[530px] h-[150px] bg-contain bg-no-repeat"></div>
+                </div>
+            </div>
+            <div class=" mt-[44px] w-[303px] h-[310px] bg-white rounded-md font-['Plus_Jakarta_Sans'] px-8 pt-10">
+                <div class="mb-5">
+                    <p class="font-bold leading-none text-[#5cad46] mb-2">Top Partners</p>
+                    <p class="text-sm leading-none">most number of content generated</p>
+                </div>
+                <ul class="text-sm">
+                    <li class="mb-4">
+                        <div class="flex justify-between">
+                            <p>
+                                <span class="font-bold mr-1">1.</span>
+                                Partner 01
+                            </p>
+                            <p>134</p>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex justify-between">
+                            <p>
+                                <span class="font-bold mr-1">2.</span>
+                                Partner 02
+                            </p>
+                            <p>111</p>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex justify-between">
+                            <p>
+                                <span class="font-bold mr-1">3.</span>
+                                Partner 03
+                            </p>
+                            <p>97</p>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex justify-between">
+                            <p>
+                                <span class="font-bold mr-1">4.</span>
+                                Partner 04
+                            </p>
+                            <p>92</p>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex justify-between">
+                            <p>
+                                <span class="font-bold mr-1">5.</span>
+                                Partner 05
+                            </p>
+                            <p>87</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
 </body>
 </html>
